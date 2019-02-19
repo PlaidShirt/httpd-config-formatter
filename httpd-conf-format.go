@@ -23,8 +23,8 @@ func main() {
 	/* Aaand parse 'em */
 	flag.Parse()
 
-	/* Special case, if the just pass in one arg let's assume it's the name of a file */
-	if len(os.Args) == 2 {
+	/* Special case, if they pass in one arg and it's not the -i flag assume it's file to process */
+	if len(os.Args) == 2 && os.Args[1] != "-i" {
 		sourceFileName = os.Args[1]
 	}
 

@@ -25,11 +25,11 @@ The following will back up the httpd.conf file in the current directory to httpd
 
 &nbsp;&nbsp;&nbsp;httpd-config-formatter -i
 
-This example will back up the ssl.conf file to ssl.conf.bak and then create a formatted version in ssl.conf, using two spaces per level of indentation:
+This example will back up the ssl.conf file to ssl.conf.bak and then create a formatted version of ssl.conf, using two spaces per level of indentation:
 
 &nbsp;&nbsp;&nbsp;httpd-config-formatter -i -p 2 -f ssl.conf
 
-This final example will take the file passed in on the command line and print the formatted output to stdout (ssl.conf in this case):
+This final example will take the file passed in on the command line and print the formatted file to standard output (ssl.conf in this case):
 
 &nbsp;&nbsp;&nbsp;httpd-config-formatter ssl.conf
 
